@@ -1,0 +1,322 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.6;
+    background-color: #F2F4F5;
+    color: #333;
+}
+
+/* Landing page container */
+.landing-page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    /* Ensure no horizontal overflow */
+}
+
+/* Hero section */
+.landing-hero {
+    background: url('C:\Users\deeks\OneDrive\Desktop\FullProj\client\src\images\pic.png');
+    background-position: center;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Navigation styles */
+.landing-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.landing-nav h2 {
+    font-size: 1.5rem;
+    font-family: "DM Sans", sans-serif;
+    color: black;
+    margin: 0;
+    /* Remove any default margins */
+}
+
+.landing-nav .nav-buttons {
+    display: flex;
+    gap: 20px;
+    /* Space between buttons */
+}
+
+.landing-nav button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1.5px solid black;
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.landing-nav button:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Hero text */
+.landing-hero-text {
+    color: black;
+    margin-top: 70vh;
+    /* Adjust vertical positioning */
+    max-width: 800px;
+}
+
+.landing-hero-text h1 {
+    font-size: 3.5rem;
+    font-family: sans-serif;
+}
+
+.landing-hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+/* Services section */
+.services-section {
+    background-color: #F7F3F2;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.client-section,
+.freelancer-section {
+    flex: 1;
+    min-width: 400px;
+    margin: 40px;
+    padding: 40px;
+    background-color: #bcb4b4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.client-section h2,
+.freelancer-section h2 {
+    font-size: 1.8rem;
+    color:#101010;
+    margin-bottom: 10px;
+}
+
+.client-section p,
+.freelancer-section p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.client-section a,
+.freelancer-section a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.client-section a:hover,
+.freelancer-section a:hover {
+    color: #0056b3;
+}
+
+/* About Us section */
+.about-us-section {
+    background-color: #070707;
+    text-align: center;
+    padding: 0px 0;
+    background: url('C:\Users\deeks\OneDrive\Desktop\FullProj\client\src\images\girl1.png') left/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-section h2 {
+    font-size: 2.5rem;
+    color: #101010;
+    /* Change text color to contrast with background */
+    margin-bottom: 100px;
+}
+
+.about-us-section p {
+    font-size: 1.2rem;
+    color: #000000;
+    /* Change text color to contrast with background */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footerContainer .socialIcons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footerContainer .socialIcons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footerContainer .socialIcons a:hover {
+    color: #007bff;
+}
+
+.footerBottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.footerBottom .designer {
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .landing-hero-text {
+        margin-top: 10vh;
+    }
+
+    .landing-hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .landing-hero-text p {
+        font-size: 1.2rem;
+    }
+
+    .landing-nav h2 {
+        font-size: 1.5rem;
+    }
+
+    .landing-nav button {
+        padding: 5px 15px;
+        font-size: 1rem;
+    }
+
+    .about-us-section {
+        padding: 40px 0;
+        height: auto;
+        /* Allow height to adjust based on content */
+    }
+
+    .services-section h2 {
+        font-size: 2rem;
+    }
+
+    .services-section p {
+        font-size: 1rem;
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerBottom p {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .landing-hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .landing-hero-text p {
+        font-size: 1rem;
+    }
+
+    .landing-nav h2 {
+        font-size: 1.2rem;
+    }
+
+    .landing-nav button {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .about-us-section {
+        padding: 20px 0;
+    }
+
+    .services-section h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Existing styles */
+
+/* About Us section */
+.about-us-section {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-us-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

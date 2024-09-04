@@ -1,0 +1,88 @@
+.client-projects-page {
+  display: flex;
+  flex-direction: column;
+  padding: 1vh 1vw;
+  background-image: url('C:\Users\deeks\OneDrive\Desktop\FullProj\client\src\images\project.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin-top: 0px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.client-projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.client-projects-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.client-projects-header select {
+  width: 30vw;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #030303;
+  font-size: 1rem;
+}
+
+.client-projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px;
+  /* Light grey background with some transparency */
+  margin-top: 10px;
+}
+
+.listed-project {
+  padding: 3vh 3vw;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #ffffff;
+}
+
+.listed-project:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.listed-project-head {
+  margin-bottom: 2vh;
+}
+
+.listed-project-head h3 {
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.listed-project h5,
+.listed-project p {
+  font-size: 1rem;
+  color: #000;
+  margin: 1vh 0;
+}
+
+.listed-project .bids-data {
+  margin-top: 2vh;
+}
+
+.bids-data h6 {
+  font-size: 1rem;
+  color: #000;
+}
+
+hr {
+  border: none;
+  height: 0.8px;
+  margin: 0.8vh 0;
+}

@@ -1,0 +1,62 @@
+body {
+  background-color: #F2F4F5;
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+.navbar {
+  background-color: #000000;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style for the text on the navbar */
+.navbar a,
+.navbar span {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+.all-users-page {
+  padding: 4vh 2vw;
+}
+
+.all-users {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.user-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-field {
+  margin-bottom: 10px;
+}
+
+.user-field b {
+  display: block;
+  font-weight: 700;
+  font-size: medium;
+  color: rgb(9, 4, 72);
+}
+
+.user-field p {
+  margin: 0;
+  color: rgb(47, 42, 107);
+  white-space: nowrap;
+  /* Prevent text from wrapping */
+  overflow: hidden;
+  /* Hide overflow text */
+  text-overflow: ellipsis;
+  /* Add ellipsis (...) for overflow text */
+}

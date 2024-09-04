@@ -1,0 +1,142 @@
+/* General reset and body styling */
+body {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Style for the navbar */
+.navbar {
+  background-color: #000000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a,
+.navbar span {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #000000;
+  color: white;
+  position: fixed;
+  top: 60px;
+  /* Adjust to be below the navbar */
+  left: -200px;
+  /* Start off-screen */
+  height: 100%;
+  padding-top: 100px;
+  transition: left 0.3s ease;
+}
+
+.sidebar.open {
+  left: 0;
+  /* Slide in when open */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 0px 0px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.sidebar ul li a:hover {
+  background-color: #575757;
+}
+
+/* Hamburger icon styles */
+.hamburger-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  left: 0px;
+  /* Adjust margin */
+}
+/* Admin page styles */
+.admin-page {
+  display: flex;
+}
+
+.dashboard-content {
+  padding: 20px;
+  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* Full width */
+  margin-left: 0;
+  /* No margin by default */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin-top: 70px;
+  /* Adjust for fixed navbar */
+}
+
+.stat-item {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.stat-item h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.stat-item p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .stat-item p {
+    font-size: 20px;
+  }
+}

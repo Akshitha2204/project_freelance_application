@@ -1,0 +1,60 @@
+/* General styling for the new project page */
+.new-project-page {
+    margin: 5vh 3vw;
+    padding: 3vh 2vw;
+    border-radius: 0.8rem;
+    background-color: #F2F4F5; /* Change background color to white */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading styles */
+.new-project-page h3 {
+    font-size: 1.8rem;
+    color: #000; /* Change text color to black */
+    margin-bottom: 4vh;
+}
+
+/* Form container styling */
+.new-project-form {
+    display: grid;
+    gap: 20px;
+}
+
+/* Textarea styling */
+.new-project-form textarea {
+    min-height: 28vh;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #000; /* Change border color to black */
+    border-radius: 5px;
+    resize: vertical;
+    color: #000; /* Change text color to black */
+}
+
+/* Grid container for form elements */
+.new-project-form span {
+    display: grid;
+    grid-template-columns: 31% 67%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Button styling */
+.new-project-form button {
+    width: 100%;
+    height: 9vh;
+    background-color: #000; /* Change background color to black */
+    color: #fff; /* Change text color to white */
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.new-project-form button:hover {
+    background-color: #140c3b; /* Change hover background color to dark gray */
+    color:white;
+}
+

@@ -1,0 +1,57 @@
+.user-applications-page {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .user-applications-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .user-application {
+    background-color: #c5d1d6;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 20px);
+  }
+  
+  .user-application h4 {
+    font-size: 1.7em;
+    margin: 0;
+    color: #2c3e50;
+  }
+  
+  .user-application p {
+    color: #383b3c;
+    font-size: 1em;
+  }
+  
+  .user-application h5 {
+    margin: 5px 0;
+    font-size: 1.1em;
+  }
+  
+  .user-application h6 {
+    margin: 5px 0;
+    font-size: 1em;
+  }
+  
+  .user-application .skill {
+    display: inline-block;
+    background-color: #ecf0f1;
+    border-radius: 3px;
+    padding: 5px 8px;
+    margin: 2px;
+    font-size: 0.875em;
+    color: #2c3e50;
+  }
+  
+  .vertical-line {
+    width: 1px;
+    background-color: #ddd;
+    height: 100%;
+    margin: 0 20px;
+  }
+  

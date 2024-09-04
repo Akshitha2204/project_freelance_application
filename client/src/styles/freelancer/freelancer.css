@@ -1,0 +1,178 @@
+body {
+
+  /* Additional styles */
+  font-family: "DM Sans", sans-serif;
+  /* Example font */
+  margin: 0;
+  /* Remove default margin */
+  padding: 0;
+}
+
+.navbar {
+background-color: black;
+}
+
+.navbar h3 {
+color: white;
+}
+
+.nav-options {
+display: flex;
+width: 40%;
+justify-content: space-evenly;
+}
+
+.nav-options p {
+margin: 0;
+color: white;
+/* Text color white */
+cursor: pointer;
+}
+
+.nav-options p {
+color: white;
+/* Ensure hover is also white */
+font-weight: 500;
+}
+
+.freelancer-home {
+background-image: url('C:\Users\deeks\OneDrive\Desktop\FullProj\client\src\images\admin (2).png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+margin: 20px auto;
+width: 90%;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.home-cards {
+width: 100%;
+/* Full width for the parent container */
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.home-card {
+background-image: url('C:\Users\deeks\OneDrive\Desktop\FullProj\client\src\images\homecard.png');
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+width: calc(25% - 25px);
+/* Four cards per row with gap */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+margin-bottom: 30px;
+}
+
+.home-card h4 {
+margin-bottom: 8px;
+font-size: 20px;
+font-weight: bold;
+color: #333333;
+}
+
+.home-card p {
+color: black;
+margin-bottom: 15px;
+font-weight:bold;
+/* Adjusted margin below paragraph */
+}
+
+
+.freelancer-details {
+width: 100%;
+max-width: 620px;
+margin-top: 20px;
+background-color: #ffffff;
+padding: 18px;
+border-radius: 12px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.freelancer-details-data span {
+background-color: rgba(180, 174, 174, 0.13);
+padding: 15px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+display: block;
+margin-bottom: 15px;
+}
+
+.freelancer-details-data h4 {
+font-size: 1.2rem;
+color: #333;
+margin-bottom: 15px;
+}
+
+.freelancer-details-data .skills {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+.freelancer-details-data .skill {
+font-weight: 200;
+font-size: 1rem;
+border: 1px solid rgb(174, 174, 174);
+color: black;
+padding: 5px 10px;
+border-radius: 5px;
+background-color: #f0f0f0;
+}
+
+.freelancer-details-update h4 {
+font-size: 1.5rem;
+color: #333;
+margin-top: 10px;
+}
+
+.freelancer-details-update textarea {
+width: 100%;
+min-height: 100px;
+padding: 10px;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: border-color 0.3s;
+}
+
+.freelancer-details-update textarea:focus {
+border-color: #031f3d;
+outline: none;
+}
+
+.freelancer-details-update .btn {
+color: #021931;
+background-color: white;
+border: 1px solid #021931;
+padding: 10px 14px;
+border-radius: 6px;
+cursor: pointer;
+font-size: 1rem;
+transition: background-color 0.3s;
+margin-right: 10px;
+}
+
+.freelancer-details-update .btn:hover {
+background-color: #021931;
+color: #feffff;
+border: 1px solid #021931;
+
+}
+
+.freelancer-details-update .btn-outline-danger {
+background-color: white;
+color: #0b0102;
+border: 1px solid #0e0138;
+}
+
+.freelancer-details-update .btn-outline-danger:hover {
+background-color: #440303;
+color: white;
+}

@@ -1,0 +1,29 @@
+.navbar {
+    height: 13vh;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    background-color: black; 
+}
+
+.navbar h3 {
+    color: white; 
+    margin: 0;
+}
+
+.nav-options {
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.nav-options p {
+    margin: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-options p:hover {
+    color: white; 
+    font-weight: 500;
+}

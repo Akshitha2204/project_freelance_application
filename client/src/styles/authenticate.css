@@ -1,0 +1,121 @@
+.AuthenticatePage {
+    background: url('C:\Users\deeks\OneDrive\Desktop\FullProj\client\src\images\classic4.png');
+    width: 100%;
+    height: 120vh; /* Full viewport height */
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(255, 255, 255); /* Page background color */
+}
+
+.auth-navbar {
+    height: 11vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3vw;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: black; /* Navbar background color */
+}
+
+.auth-navbar h3 {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    color: white; /* Navbar text color */
+    font-weight: 200;
+}
+
+.auth-navbar p {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    margin-left: 2vw;
+    color: white; /* Navbar text color */
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.authForm {
+    width: 39%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    backdrop-filter: blur(10px);
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.authForm h2 {
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 1.8rem;
+}
+
+.authFormInputs {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.authFormInputs label {
+    color: #393939;
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.authFormInputs input,
+.authForm select {
+    width: 100%;
+    padding: 0.75rem;
+    color: black;
+    border: 1px solid #9dc1d975;
+    outline: none;
+    background-color: rgba(18, 18, 18, 0);
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+.authForm button {
+    background-color: black;
+    /* Button background color */
+    font-weight: bold;
+    color: #f6fbff;
+    /* Button text color */
+    height: 50px;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.authForm button:hover {
+    background-color: #0f052c;
+    /* Button hover background color */
+}
+
+.authForm p {
+    margin-top: 1rem;
+    color: black;
+    /* Text color */
+    font-size: 0.9rem;
+}
+
+.authForm p span {
+    color: #021c2b;
+    /* Highlight text color */
+    cursor: pointer;
+    text-decoration: underline;
+}
